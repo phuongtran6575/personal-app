@@ -8,6 +8,7 @@ class AddTodoPage extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             ElevatedButton(onPressed: () => {}, child: Text("back list")),
             Text("day la page add todo"),

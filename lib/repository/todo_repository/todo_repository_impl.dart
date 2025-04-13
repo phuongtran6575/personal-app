@@ -2,7 +2,10 @@ import 'package:myapp/models/todo_model.dart';
 import 'package:myapp/repository/todo_repository/todo_repository.dart';
 
 class TodoRepositoryImpl extends TodoRepository {
-  List<TodoModel> todoList = [TodoModel(1, "todo_1"), TodoModel(2, "todo_2")];
+  List<TodoModel> todoList = [
+    TodoModel(1, "todo_1", true, "lam viec 1", DateTime.now()),
+    TodoModel(2, "todo_2", true, "lam viec 2", DateTime.now()),
+  ];
   @override
   Future<List<TodoModel>> getListTodos() async {
     try {

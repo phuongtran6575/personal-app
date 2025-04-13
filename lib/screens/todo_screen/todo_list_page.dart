@@ -19,6 +19,7 @@ class TodoListPage extends StatelessWidget {
               return CardtodoWidget(
                 idTodo: todoController.listTodo[index].idTodo ?? 0,
                 nameTodo: todoController.listTodo[index].nameTodo ?? '',
+                dueDate: DateTime.now(),
               );
             },
           ),

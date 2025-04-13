@@ -1,5 +1,15 @@
 class TodoModel {
   int? idTodo;
   String? nameTodo;
-  TodoModel(this.idTodo, this.nameTodo);
+  bool? isDone;
+  String? description;
+  bool? isCompleted;
+  DateTime? dueDate;
+  TodoModel(
+    this.idTodo,
+    this.nameTodo,
+    this.isCompleted,
+    this.description,
+    this.dueDate,
+  );
 }
